@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Banking System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Banking System</h1>
+    
+    <!-- Add Account Holder Section -->
+    <div class="add-account">
+      <h2>Add Account Holder</h2>
+      <label for="newName">Name:</label>
+      <input type="text" id="newName" placeholder="Enter name">
+      <label for="initialBalance">Initial Balance:</label>
+      <input type="number" id="initialBalance" placeholder="Enter initial balance">
+      <button id="add-account-btn">Add Account</button>
+    </div>
+
+    <!-- Account Details Section -->
+    <div class="account">
+      <div class="account-holder">
+        <label for="name">Account Holder Name:</label>
+        <span id="name-display">John Doe</span>
+        <input type="text" id="name-input" value="John Doe" hidden>
+        <button id="edit-btn">Edit</button>
+        <button id="done-btn" hidden>Done</button>
+      </div>
+      <h2>Account Balance:</h2>
+      <p id="balance">$1000</p>
+      <input type="number" id="amount" placeholder="Enter amount">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
